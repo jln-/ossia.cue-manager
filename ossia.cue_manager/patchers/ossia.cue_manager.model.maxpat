@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 613.0, 85.0, 972.0, 539.0 ],
+		"rect" : [ 142.0, 483.0, 972.0, 539.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -263,7 +263,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 745.208333333333258, 15.0, 150.0, 48.0 ],
+					"patching_rect" : [ 745.208333333333258, 15.0, 150.0, 47.0 ],
 					"text" : "#1 is used to create send/receive names for comunication with view"
 				}
 
@@ -275,7 +275,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 745.208333333333258, 69.0, 150.0, 34.0 ],
+					"patching_rect" : [ 745.208333333333258, 69.0, 150.0, 33.0 ],
 					"text" : "#1 must be unique (an be the same as in the view)"
 				}
 
@@ -3566,7 +3566,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 15.0, 210.0, 150.0, 36.0 ],
+					"patching_rect" : [ 15.0, 210.0, 150.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3582,11 +3582,11 @@
 				"box" : 				{
 					"id" : "obj-69",
 					"maxclass" : "newobj",
-					"numinlets" : 14,
-					"numoutlets" : 14,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 15.0, 105.0, 870.0, 22.0 ],
-					"text" : "route parameter namespace file/path filewatch store update recall delete address name node osc namespace_size"
+					"numinlets" : 17,
+					"numoutlets" : 17,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 15.0, 105.0, 758.0, 22.0 ],
+					"text" : "route parameter namespace file/path filewatch store update recall delete address name node osc namespace_size expose protocols protocol"
 				}
 
 			}
@@ -4313,15 +4313,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 875.5, 138.0, 699.5, 138.0 ],
-					"source" : [ "obj-69", 13 ]
+					"midpoints" : [ 763.5, 138.0, 699.5, 138.0 ],
+					"source" : [ "obj-69", 16 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 89.961538461538467, 138.0, 144.5, 138.0 ],
+					"midpoints" : [ 70.6875, 138.0, 144.5, 138.0 ],
 					"source" : [ "obj-69", 1 ]
 				}
 
@@ -4337,7 +4337,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
-					"midpoints" : [ 220.884615384615387, 138.0, 275.5, 138.0 ],
+					"midpoints" : [ 163.0625, 138.0, 275.5, 138.0 ],
 					"source" : [ "obj-69", 3 ]
 				}
 
@@ -4345,7 +4345,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"midpoints" : [ 155.423076923076934, 138.0, 234.5, 138.0 ],
+					"midpoints" : [ 116.875, 138.0, 234.5, 138.0 ],
 					"source" : [ "obj-69", 2 ]
 				}
 
@@ -4353,7 +4353,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 482.730769230769226, 168.0, 429.5, 168.0 ],
+					"midpoints" : [ 347.8125, 168.0, 429.5, 168.0 ],
 					"source" : [ "obj-69", 7 ]
 				}
 
@@ -4361,7 +4361,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-75", 1 ],
-					"midpoints" : [ 286.346153846153868, 191.0, 215.5, 191.0 ],
+					"midpoints" : [ 209.25, 191.0, 215.5, 191.0 ],
 					"source" : [ "obj-69", 4 ]
 				}
 
@@ -4369,7 +4369,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-82", 1 ],
-					"midpoints" : [ 351.807692307692321, 136.0, 320.5, 136.0 ],
+					"midpoints" : [ 255.4375, 136.0, 320.5, 136.0 ],
 					"source" : [ "obj-69", 5 ]
 				}
 
@@ -4377,7 +4377,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
-					"midpoints" : [ 417.269230769230774, 150.0, 354.5, 150.0 ],
+					"midpoints" : [ 301.625, 150.0, 354.5, 150.0 ],
 					"source" : [ "obj-69", 6 ]
 				}
 
@@ -4495,12 +4495,12 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "ossia.model.mxe64",
-				"type" : "mx64"
+				"name" : "ossia.model.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "ossia.parameter.mxe64",
-				"type" : "mx64"
+				"name" : "ossia.parameter.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
